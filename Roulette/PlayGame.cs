@@ -11,6 +11,11 @@ namespace Roulette
             WriteText.StartGameText();
             WriteText.EnterChoice();
             QuitGame(!Menu.StartGameChoice(Console.ReadLine()));
+            Console.Clear();
+
+            RouletteWheel[] gameWheel = RouletteWheel.ConstructWheel();
+            
+
         }
 
         public static void QuitGame(bool quit)

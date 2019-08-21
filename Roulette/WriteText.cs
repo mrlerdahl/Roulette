@@ -109,7 +109,7 @@ namespace Roulette
         public static void Corners()
         {
             Console.WriteLine(" Choose a number option");
-            Console.WriteLine(" 1. 1/2/4/5");
+            Console.WriteLine(" 1. 1|2|4|5");
             Console.WriteLine(" 2. 2/3/4/6");
             Console.WriteLine(" 3. 4/5/7/8");
             Console.WriteLine(" 4. 5/6/8/9");
@@ -125,12 +125,12 @@ namespace Roulette
             Console.WriteLine(" 14. 20/21/23/24");
             Console.WriteLine(" 15. 22/23/25/26");
             Console.WriteLine(" 16. 23/24/26/27");
-            Console.WriteLine(" 18. 25/26/28/29");
-            Console.WriteLine(" 19. 26/27/29/30");
-            Console.WriteLine(" 20. 28/29/31/32");
-            Console.WriteLine(" 21. 29/30/32/33");
-            Console.WriteLine(" 22. 31/32/34/35");
-            Console.WriteLine(" 23. 32/33/35/36");
+            Console.WriteLine(" 17. 25/26/28/29");
+            Console.WriteLine(" 18. 26/27/29/30");
+            Console.WriteLine(" 19. 28/29/31/32");
+            Console.WriteLine(" 20. 29/30/32/33");
+            Console.WriteLine(" 21. 31/32/34/35");
+            Console.WriteLine(" 22. 32/33/35/36");
         }
 
         public static void EnterChoice()
