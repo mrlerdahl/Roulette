@@ -6,7 +6,7 @@ namespace Roulette
 {
     public class Menu
     {
-        public static bool StartGameChoice(string input)
+        public static bool YesOrNo(string input)
         {
             if (input.ToLower() == "yes")
             {
@@ -19,9 +19,15 @@ namespace Roulette
             else
             {
                 WriteText.InvalidEntryText();
-                StartGameChoice(Console.ReadLine());
+                YesOrNo(Console.ReadLine());
             }
             return false;
+        }
+
+        public static int ChooseTypeOfBet()
+        {
+            Console.WriteLine(" Type a bet option, type 0 to stop placing bets, or type -1 to quit");
+            return UserInput.GetNumber();
         }
     }
 }

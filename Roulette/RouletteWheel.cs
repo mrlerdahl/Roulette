@@ -15,7 +15,7 @@ namespace Roulette
             BinColor = setBinColor;
         }
 
-        public RouletteWheel SpinWheel(RouletteWheel[] binArray)
+        public static RouletteWheel SpinWheel(RouletteWheel[] binArray)
         {
             Random r = new Random();
 

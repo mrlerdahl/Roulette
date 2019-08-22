@@ -5,14 +5,14 @@ using System.Text;
 namespace Roulette
 {
 
-    // ****** DISPLAY CORNERS SUCH AS 1. 1/2/4/5 2. 23/24/26/27
-    // ****** DO SAME WITH OTHER BETS
-    public class Bets
+    public class Bet
     {
-        public static int PlaceMoneyBet(int moneyBet, bool isBetWin)
-        {
-            return moneyBet;
-        }
+        public int MoneyBetHolder { get; }
+
+        //public Bet()
+        //{
+        //    this.MoneyBetHolder = moneyBet;
+        //}
 
         public static bool Number(int chooseNumber, int binResult)
         {
@@ -22,7 +22,7 @@ namespace Roulette
             return false;
         }
 
-        public static bool EvensOdds(string chooseEvensOrOdds = "evens", int binResult = 0)
+        public static bool EvensOdds(string chooseEvensOrOdds, int binResult)
         {
             if (binResult % 2 == 0 && chooseEvensOrOdds == "evens")
                 return true;
@@ -32,7 +32,7 @@ namespace Roulette
             return false;
         }
 
-        public static bool RedsBlacks(string chooseColor = "black", string binResult = "red")
+        public static bool RedsBlacks(string chooseColor, string binResult)
         {
             if (chooseColor == binResult)
                 return true;
@@ -40,7 +40,7 @@ namespace Roulette
             return false;
         }
 
-        public static bool LowsHighs(string chooseLowOrHigh = "low", int binResult = 0)
+        public static bool LowsHighs(string chooseLowOrHigh, int binResult)
         {
             if (chooseLowOrHigh == "low" && (binResult > 0 && binResult <= 18))
                 return true;
@@ -50,7 +50,7 @@ namespace Roulette
             return false;
         }
 
-        public static bool Dozens(string chooseDozens = "first", int binResult = 0)
+        public static bool Dozens(string chooseDozens, int binResult)
         {
             if (chooseDozens == "first" && (binResult >= 1 && binResult <= 12))
                 return true;
@@ -61,7 +61,7 @@ namespace Roulette
             return false;
         }
 
-        public static bool Columns(string chooseColumn = "column1", int binResult = 0)
+        public static bool Columns(string chooseColumn, int binResult)
         {
 
             if (chooseColumn == "column1")
@@ -91,7 +91,7 @@ namespace Roulette
             return false;
         }
 
-        public static bool Street(int chooseRow = 0, int binResult = 0)
+        public static bool Street(int chooseRow, int binResult)
         {
             switch (chooseRow)
             {
