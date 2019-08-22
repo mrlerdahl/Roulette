@@ -16,6 +16,7 @@ namespace Roulette
         {
             Console.Write("  Enter the amount of money you would like to start the game with: ");
         }
+
         public static void TypesOfBetsText()
         {
             Console.WriteLine("1. Numbers: the number of the bin");
@@ -108,6 +109,7 @@ namespace Roulette
             Console.WriteLine(" 5. 25/26/27/28/29/30");
             Console.WriteLine(" 6. 21/32/33/34/35/36");
         }
+
         public static void SplitChoice()
         {
             Console.WriteLine(" Choose two adjacent numbers(numbers that are next to each other)");
@@ -145,13 +147,9 @@ namespace Roulette
             Console.Write("  Enter choice: ");
         }
 
-        public static void InvalidEntryText()
-        {
-            Console.WriteLine("\n\t**Invalid Entry**\n");
-        }
         public static void InvalidInputText()
         {
-            Console.WriteLine("\n\t**Invalid input**\n");
+            Console.WriteLine("\n\t** Invalid input **\n");
         }
 
         public static void AskIfMoreBets()
@@ -164,10 +162,12 @@ namespace Roulette
         {
             Console.Write("  You lost: ");
         }
+
         public static void WonBet()
         {
             Console.Write("  You won: ");
         }
+
         public static void BrokeEven()
         {
             Console.Write(" You broke even: ");
@@ -182,6 +182,21 @@ namespace Roulette
         {
             Console.WriteLine(" Do you want to play again?");
             Console.Write(" Type yes or no: ");
+        }
+
+        public static void TypesYesOrNo()
+        {
+            Console.Write("  Type yes or no: ");
+        }
+        
+        public static void InvalidAmount()
+        {
+            Console.WriteLine("\n\t** Invalid input: Amount needs to be greater than 0 **\n");
+        }
+
+        public static void EnterAmount()
+        {
+            Console.Write("  Enter Amount: ");
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Roulette
     {
         public static string GetString()
         {
-            string input = Console.ReadLine();
+            string input = Console.ReadLine().ToLower();
             return input;
         }
 
@@ -17,5 +17,10 @@ namespace Roulette
             int input = Validation.NumberValidation(Console.ReadLine());
             return input;
         }
+
+        //public static int GetInitialCashAmount()
+        //{
+
+        //}
     }
 }

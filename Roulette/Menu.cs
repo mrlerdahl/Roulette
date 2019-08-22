@@ -18,16 +18,12 @@ namespace Roulette
             }
             else
             {
-                WriteText.InvalidEntryText();
+                WriteText.InvalidInputText();
+                WriteText.TypesYesOrNo();
                 YesOrNo(Console.ReadLine());
             }
-            return false;
+            return true;
         }
 
-        public static int ChooseTypeOfBet()
-        {
-            Console.WriteLine(" Type a bet option, type 0 to stop placing bets, or type -1 to quit");
-            return UserInput.GetNumber();
-        }
     }
 }

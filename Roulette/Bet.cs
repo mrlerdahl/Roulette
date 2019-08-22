@@ -24,9 +24,9 @@ namespace Roulette
 
         public static bool EvensOdds(string chooseEvensOrOdds, int binResult)
         {
-            if (binResult % 2 == 0 && chooseEvensOrOdds == "evens")
+            if (binResult % 2 == 0 && chooseEvensOrOdds == "even")
                 return true;
-            if (binResult % 2 != 0 && chooseEvensOrOdds == "odds")
+            if (binResult % 2 != 0 && chooseEvensOrOdds == "odd")
                 return true;
 
             return false;
