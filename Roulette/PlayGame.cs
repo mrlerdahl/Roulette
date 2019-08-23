@@ -15,8 +15,7 @@ namespace Roulette
             Console.Clear();
 
             RouletteWheel[] gameWheel = RouletteWheel.ConstructWheel();
-            RouletteWheel binResult;
-            List<int> ListOfBetResults = new List<int>();
+            RouletteWheel binResult;        
             ConsoleSpinner spinner = new ConsoleSpinner();
             spinner.Delay = 300;
             Stopwatch s = new Stopwatch();
@@ -41,7 +40,7 @@ namespace Roulette
                 // I'll display wheel spinning after bets are placed 
                 // to make the user think the wheel spun after bets are placed
                 binResult = RouletteWheel.SpinWheel(gameWheel);
-
+                List<int> ListOfBetResults = new List<int>();
                 // once user tpyes no at the end of the loop it will then exit the loop
                 while (userDecision)
                 {
